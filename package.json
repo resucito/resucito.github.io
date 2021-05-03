@@ -2,7 +2,7 @@
   "name": "resucito",
   "version": "0.0.1",
   "scripts": {
-    "dev": "svelte-kit dev -- --open",
+    "dev": "svelte-kit dev",
     "build": "svelte-kit build --verbose",
     "start": "svelte-kit start",
     "lint": "prettier --check . && eslint --ignore-path .gitignore .",
@@ -10,6 +10,7 @@
   },
   "devDependencies": {
     "@sveltejs/adapter-node": "next",
+    "@sveltejs/adapter-static": "*",
     "@sveltejs/kit": "next",
     "@typescript-eslint/eslint-plugin": "^4.19.0",
     "@typescript-eslint/parser": "^4.19.0",
