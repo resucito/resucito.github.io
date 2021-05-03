@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "svelte-kit dev",
-    "build": "svelte-kit build --verbose",
+    "build": "rm -rf build && svelte-kit build && touch build/.nojekyll",
+    "deploy": "npm run build && npx gh-pages -d build -t true",
     "start": "svelte-kit start",
     "lint": "prettier --check . && eslint --ignore-path .gitignore .",
     "format": "prettier --write ."
