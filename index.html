@@ -5,16 +5,17 @@
 		<link rel="icon" href="/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<title>About • Resucito!</title>
+		<title>Resucito!</title>
 
 		
 
 		<link rel="modulepreload" href="/./_app/start-a51269a1.js">
 		<link rel="modulepreload" href="/./_app/chunks/vendor-43a48d7f.js">
 		<link rel="modulepreload" href="/./_app/pages/__layout.svelte-8dbce344.js">
-		<link rel="modulepreload" href="/./_app/pages/about.svelte-e0b093cd.js">
+		<link rel="modulepreload" href="/./_app/pages/index.svelte-043b3500.js">
 		<link rel="stylesheet" href="/./_app/assets/start-a8cd1609.css">
 		<link rel="stylesheet" href="/./_app/assets/pages/__layout.svelte-980ad94b.css">
+		<link rel="stylesheet" href="/./_app/assets/pages/index.svelte-1917dfbe.css">
 
 		<script type="module">
 			import { start } from "/./_app/start-a51269a1.js";
@@ -26,7 +27,20 @@
 				route: true,
 				spa: false,
 				trailing_slash: "never",
-				hydrate: null
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/./_app/pages/__layout.svelte-8dbce344.js"),
+						import("/./_app/pages/index.svelte-043b3500.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
 			});
 		</script>
 	</head>
@@ -40,11 +54,13 @@
 
 
 
-<h1>About this site</h1>
+<main class="svelte-ocp1vb"><h1 class="svelte-ocp1vb">📕 Resucito!</h1>
 
-<p>This is a simple site, built with <a href="https://kit.svelte.dev">SvelteKit</a>, an application
-	framework for <a href="https://svelte.dev">Svelte</a>.
-</p>
+	<form><input class="search-input svelte-1lfekdy" placeholder="Search song titles or categories">
+	<button class="svelte-1lfekdy">Search</button></form>
+
+
+</main>
 
 
 

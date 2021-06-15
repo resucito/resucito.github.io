@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<title>Tú eres mi esperanza, Señor</title>
+
+		
+
+		<link rel="modulepreload" href="/./_app/start-a51269a1.js">
+		<link rel="modulepreload" href="/./_app/chunks/vendor-43a48d7f.js">
+		<link rel="modulepreload" href="/./_app/pages/__layout.svelte-8dbce344.js">
+		<link rel="modulepreload" href="/./_app/pages/songs/[slug].svelte-183b586c.js">
+		<link rel="stylesheet" href="/./_app/assets/start-a8cd1609.css">
+		<link rel="stylesheet" href="/./_app/assets/pages/__layout.svelte-980ad94b.css">
+
+		<script type="module">
+			import { start } from "/./_app/start-a51269a1.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":"/."},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/./_app/pages/__layout.svelte-8dbce344.js"),
+						import("/./_app/pages/songs/[slug].svelte-183b586c.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/songs/tu-eres-mi-esperanza-senor",
+						query: new URLSearchParams(""),
+						params: {"slug":"tu-eres-mi-esperanza-senor"}
+					}
+				}
+			});
+		</script>
+	</head>
+	<body>
+		<div id="svelte">
+
+
+<nav><a href=".">Home</a>
+	<a href="songs">Songs</a>
+	<a href="about">About</a></nav>
+
+
+
+<h1>Tú eres mi esperanza, Señor</h1>
+
+<div class="content">Tú eres mi esperanza, Señor
+	You Are My Hope, O Lord (XXIX Ode Of Solomon)</div>
+
+
+
+	<script type="svelte-data" url="tu-eres-mi-esperanza-senor.json">{"status":200,"statusText":"","headers":{"content-type":"application/json"},"body":"{\"slug\":\"tu-eres-mi-esperanza-senor\",\"spanish_title\":\"Tú eres mi esperanza, Señor\",\"english_title\":\"You Are My Hope, O Lord (XXIX Ode Of Solomon)\"}"}</script>
+</div>
+	</body>
+</html>
