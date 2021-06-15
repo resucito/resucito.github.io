@@ -1,6 +1,5 @@
 <script lang="ts">
-	import Counter from '$lib/Counter.svelte';
-	import Search from '$lib/Search.svelte';
+	import Search from '$lib/Search/index.svelte';
 </script>
 
 <svelte:head>

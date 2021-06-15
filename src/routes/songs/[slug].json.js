@@ -1,7 +1,7 @@
 import songs from './_songs.js';
 
 const lookup = new Map();
-songs.forEach(song => {
+songs.forEach((song) => {
 	lookup.set(song.slug, song);
 });
 
@@ -20,6 +20,6 @@ export function get({ params }) {
 			headers: {
 				'Content-Type': 'application/json'
 			}
-		}
+		};
 	}
 }
